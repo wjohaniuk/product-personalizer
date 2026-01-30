@@ -1,8 +1,12 @@
 import styles from './Button.module.scss';
 import clsx from 'clsx';
 
-const Button = (props) => {
-    return (<button className={clsx(styles.button, props.className)}>{props.children}</button>);
+const Button = ({ className, onClick, children }) => {
+	return (
+		<button className={clsx(styles.button, className)} onClick={onClick}>
+			{children}
+		</button>
+	);
 };
 
 export default Button;

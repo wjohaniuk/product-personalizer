@@ -1,3 +1,4 @@
+import React from 'react';
 import PropTypes from 'prop-types';
 import styles from '../Product/Product.module.scss';
 import clsx from 'clsx';
